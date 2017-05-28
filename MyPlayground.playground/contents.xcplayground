@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<playground version='6.0' target-platform='ios'>
+    <pages>
+        <page name='Optionals'/>
+        <page name='tuple'/>
+        <page name='Range'/>
+        <page name='DataStructure'/>
+        <page name='Method'/>
+        <page name='Array'/>
+        <page name='Dictionary'/>
+        <page name='String'/>
+        <page name='Any'/>
+        <page name='Init'/>
+        <page name='UserDefaults'/>
+        <page name='Assertions'/>
+    </pages>
+</playground>
