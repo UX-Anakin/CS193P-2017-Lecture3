@@ -8,7 +8,7 @@ import UIKit
  */
 
 var a = Array<String>()
-var b = [String]()
+var b = [String]() // This appears to be winning the battle of "preferred"
 
 var animals = ["Giraffe", "Cow", "Doggie", "Bird"]
 animals.append("Ostrich")
@@ -35,11 +35,14 @@ for animal in animals {
  reduce (initial: U, combine: (U,T) -> U) -> U
  */
 
+/// filter(includeElement: (T) -> Bool) -> [T]
 let bigNumbers = [2,47,118,5,9].filter({ $0 > 20})
 
+/// map(transform: (T) -> U) -> [U]
 let stringified: [String] = [1,2,3].map{String($0)}
 
-let sum: Int = [1,2,3].reduce(0, {$0 + $1})
+/// reduce(initial: U, combine: (U, T) -> U) -> U
+let sum: Int = [1,2,3].reduce(0) {$0 + $1}
 
 
 

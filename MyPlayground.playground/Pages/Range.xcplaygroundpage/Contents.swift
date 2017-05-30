@@ -4,9 +4,8 @@ import Foundation
 import UIKit
 
 /*
- Range in Swift is just two end points.
+ Range in Swift is just two end points. ..
  A Range can represent things like a selection in some text or a portion of an Array.
- 
  Range is generic(Range<T>) but T is restricted (comparable)
  */
 
@@ -25,8 +24,14 @@ struct Range<T> {
  */
 
 let array = ["a", "b", "c", "d"]
-let a = array[2...3]
-let b = array[2..<3]
+let a = array[2...3] // a will be a slice of the array containing ["c", "d"]
+let b = array[2..<3] // b will be a slice of the array containing ["c"]
+///let c = array[6...8] // runtime crash (array index out of bounds)
+///let d = array[4...1] // runtime crash (lower bound must be smaller than upper bound)
+
+/*
+ A String subrange is not Range<Int> (it's Range<String.Index>)
+ */
 
 /*
  Range If the type of the upper/lower bound is an Int ..< makes a CountableRange. (Actually, it depends on whether the upper/lower bound is "strideable by Int" to be precise)

@@ -10,8 +10,11 @@
         <page name='Dictionary'/>
         <page name='String'/>
         <page name='Any'/>
-        <page name='Init'/>
+        <page name='Initialization'/>
         <page name='UserDefaults'/>
         <page name='Assertions'/>
+        <page name='Properties'/>
+        <page name='OtherClass'/>
+        <page name='Assertion'/>
     </pages>
 </playground>

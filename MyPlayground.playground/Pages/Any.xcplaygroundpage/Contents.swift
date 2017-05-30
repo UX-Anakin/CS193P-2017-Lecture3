@@ -3,29 +3,16 @@
 import Foundation
 
 /*
-    NSObject Base clas for all Objective-C classes 
+ Any & AnyObject are special types
+ these types used to be commonly used for compatibility with old Objective-C API.
  
  */
 
 /*
- NSNumber: Generic number-holding class
- */
-
-/*
-    Date: value type used to find out the date and time right now of the store past or future dates
- */
-
-/*
- Data a value type "bag " bits used to save restore/transform data throughout the iOS SDK
- */
-
-/*
- Any & AnyObject are special types
- These types used to be commonly used for compatibility with old Objective-C APIs
- */
-
-/*
  Conversion is done with the as? keyword in Swift 
+ You can cast any type with as? init any other type that makes sense
+ we can also check to see if something can be converted with the is keyword(true/false)
+ 
  */
 
 var str = "Hello, playground"
